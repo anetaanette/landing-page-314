@@ -74,8 +74,8 @@ body {
 
     &__img {
       position: relative;
-      right: 8.5rem;
-      width: 80%;
+      right: 2rem;
+      width: 50%;
     }
   }
 
@@ -87,6 +87,9 @@ body {
         &__h1,
         &__p {
           text-align: center;
+        }
+        &__p {
+          color: var(--color-dark);
         }
       }
     }
@@ -103,17 +106,18 @@ body {
       }
     }
   }
+  .container__slide {
+    padding: 0;
+  }
   .splide {
     img {
       width: 10rem;
       height: 10rem;
+      box-shadow: 0px 8px 20px -10px var(--black);
     }
     &__arrow {
-      &--prev {
-        left: -1.6rem;
-      }
-      &--next {
-        right: -1.6rem;
+      svg {
+        fill: var(--black);
       }
     }
     &__slide {

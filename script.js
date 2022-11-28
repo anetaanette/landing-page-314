@@ -1,16 +1,16 @@
 const splide = new Splide('.splide', {
     type: 'slide', //slide, loop, fade
     // padding: { y: 10 }, //css values
-    gap: '65px', //1 rem default
+    gap: '1rem', //1 rem default
     rewind: true,
     speed: 500, //transition in milliseconds
-    fixedWidth: '10vw',
-    width: '36rem',
+    fixedWidth: '10.4rem',
+    width: '33rem',
     perPage: 3,
-    start: 1,
+    start: 3,
     perMove: 1,
     autoplay: true,
-    interval: 3000,
+    interval: 2000,
     pagination: false,
     pauseOnHover: true,
     wheel: true,

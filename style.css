@@ -84,8 +84,8 @@ body .text-img__flex {
 
 body .text-img__img {
   position: relative;
-  right: 8.5rem;
-  width: 80%;
+  right: 2rem;
+  width: 50%;
 }
 
 body .img-text {
@@ -100,6 +100,10 @@ body .img-text .d-flex .text__h1, body .img-text .d-flex .text__p {
   text-align: center;
 }
 
+body .img-text .d-flex .text__p {
+  color: var(--color-dark);
+}
+
 body .offer {
   background-color: var(--bg-offer);
   text-align: center;
@@ -111,17 +115,19 @@ body .offer .subtitle span {
   font-weight: 600;
 }
 
+body .container__slide {
+  padding: 0;
+}
+
 body .splide img {
   width: 10rem;
   height: 10rem;
+  -webkit-box-shadow: 0px 8px 20px -10px var(--black);
+          box-shadow: 0px 8px 20px -10px var(--black);
 }
 
-body .splide__arrow--prev {
-  left: -1.6rem;
-}
-
-body .splide__arrow--next {
-  right: -1.6rem;
+body .splide__arrow svg {
+  fill: var(--black);
 }
 
 body .splide__slide p {
