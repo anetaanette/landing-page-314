@@ -5,9 +5,16 @@
   font-size: 10px;
 }
 
+h1,
+h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
 body {
   font-family: "Poppins";
   header {
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2rem;
@@ -106,7 +113,7 @@ body {
       }
     }
   }
-  .container__slide {
+  .box__slide {
     padding: 0;
   }
   .splide {
@@ -114,6 +121,9 @@ body {
       width: 30vw;
       height: auto;
       box-shadow: 0px 8px 20px -10px var(--black);
+    }
+    &__list {
+      text-align: left;
     }
 
     &__arrow {
@@ -123,7 +133,7 @@ body {
     }
     &__slide {
       p {
-        margin-top: 2rem;
+        margin: 1rem 0 0 0.3rem;
         text-transform: uppercase;
       }
     }
@@ -133,12 +143,54 @@ body {
   }
 }
 
-h1,
-h2 {
-  text-transform: uppercase;
-  font-weight: 400;
-}
-
 .fa-sharp {
   margin-right: 1rem;
+}
+
+@media (min-width: 768px) {
+  body {
+    header {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .text-img {
+      &__flex {
+        min-width: 50%;
+        padding: 5rem 1rem 1rem 4rem;
+      }
+      .text {
+        &__h1 {
+          font-size: 3rem;
+        }
+        &__p {
+          font-size: 2rem;
+        }
+      }
+      img {
+        right: 4rem;
+      }
+    }
+    .img-text {
+      .flex-column {
+        margin-top: 2rem;
+      }
+      .text {
+        &__h1 {
+          font-size: 3rem;
+        }
+        &__p {
+          font-size: 2rem;
+          padding: 2rem;
+        }
+      }
+    }
+    .offer {
+      .box,
+      .subtitle,
+      span,
+      p {
+        font-size: 2rem;
+      }
+    }
+  }
 }

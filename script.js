@@ -1,6 +1,6 @@
 const splide = new Splide('.splide', {
     type: 'slide',
-    gap: '10%',
+    gap: '5%',
     rewind: true,
     speed: 500,
     //fixedWidth: '10.34rem',
