@@ -1,11 +1,10 @@
 const splide = new Splide('.splide', {
-    type: 'slide', //slide, loop, fade
-    // padding: { y: 10 }, //css values
-    gap: '1rem', //1 rem default
+    type: 'slide',
+    gap: '10%',
     rewind: true,
-    speed: 500, //transition in milliseconds
-    fixedWidth: '10.4rem',
-    width: '33rem',
+    speed: 500,
+    //fixedWidth: '10.34rem',
+    width: '100vw',
     perPage: 3,
     start: 3,
     perMove: 1,
