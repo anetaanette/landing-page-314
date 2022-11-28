@@ -26,23 +26,42 @@ body header .header__link .header__img {
   position: initial;
 }
 
-body header .header__bottom {
-  gap: 2rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+body header .header__btn {
+  gap: 1rem;
 }
 
-body header .header__bottom .d-flex {
-  gap: 1rem;
+body header .header__btn a {
+  padding: 0;
+  background: linear-gradient(60deg, var(--btn-light), var(--btn-dark));
+  border: none;
+  border-radius: 0;
+  color: var(--white);
+}
+
+body header .header__btn a:first-child {
+  width: 17rem;
+  height: 3.5rem;
+  padding: 1rem 3rem;
+  color: var(--white);
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.2rem;
+}
+
+body header .header__btn a:nth-child(2), body header .header__btn a:nth-child(3) {
+  height: 3.5rem;
+  width: 3rem;
+  padding: 1rem;
 }
 
 body header .header__address, body header .header__email {
   margin: 0;
+  color: var(--color-header);
 }
 
 body .text-img {
   background-color: var(--bg-text-img);
+  color: var(--color-dark);
 }
 
 body .text-img .text__h1 {
@@ -60,12 +79,17 @@ body .text-img__flex {
   padding: 1rem;
   position: relative;
   min-width: 53%;
+  margin-left: 1rem;
 }
 
 body .text-img__img {
   position: relative;
-  right: 6.5rem;
-  width: 65%;
+  right: 8.5rem;
+  width: 80%;
+}
+
+body .img-text {
+  color: var(--color-offer);
 }
 
 body .img-text .d-flex {
@@ -80,6 +104,7 @@ body .offer {
   background-color: var(--bg-offer);
   text-align: center;
   color: var(--white);
+  padding-top: 2rem;
 }
 
 body .offer .subtitle span {
