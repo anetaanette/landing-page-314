@@ -5,16 +5,30 @@
   font-size: 10px;
 }
 
-main {
+body {
   font-family: "Poppins";
   header {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    .header__link {
-      .header__img {
-        width: 20rem;
-        position: initial;
+    padding: 1rem;
+    .header {
+      &__link {
+        .header__img {
+          width: 20rem;
+          position: initial;
+        }
+      }
+      &__bottom {
+        gap: 2rem;
+        align-items: center;
+        .d-flex {
+          gap: 1rem;
+        }
+      }
+      &__address,
+      &__email {
+        margin: 0;
       }
     }
   }
@@ -35,11 +49,57 @@ main {
       position: relative;
       min-width: 53%;
     }
+
+    &__img {
+      position: relative;
+      right: 6.5rem;
+      width: 65%;
+    }
   }
-  img {
-    position: relative;
-    right: 6.5rem;
-    width: 65%;
+
+  .img-text {
+    .d-flex {
+      padding: 1rem;
+      .text {
+        &__h1,
+        &__p {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .offer {
+    background-color: var(--bg-offer);
+    text-align: center;
+    color: var(--white);
+    .subtitle {
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+  .splide {
+    img {
+      width: 10rem;
+      height: 10rem;
+    }
+    &__arrow {
+      &--prev {
+        left: -1.6rem;
+      }
+      &--next {
+        right: -1.6rem;
+      }
+    }
+    &__slide {
+      p {
+        text-transform: uppercase;
+      }
+    }
+    &__track {
+      background: var(--bg-offer);
+    }
   }
 }
 
@@ -49,6 +109,6 @@ h2 {
   font-weight: 400;
 }
 
-i {
+.fa-sharp {
   margin-right: 1rem;
 }

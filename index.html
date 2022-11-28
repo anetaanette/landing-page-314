@@ -21,36 +21,31 @@
       href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.5.0/dist/css/themes/splide-skyblue.min.css"
     />
 
-    <script
-      src="https://kit.fontawesome.com/4e17153010.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.5.0/dist/js/splide.min.js"></script>
-
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="colors.css" />
   </head>
-  <main>
+  <body>
     <header class="header d-flex flex-column">
       <a href="https://www.google.com/" class="header__link">
         <img src="./img/25A1E2463C1A1375-1.png" alt="" class="header__img" />
       </a>
+      <div class="header__bottom d-flex">
+        <div class="flex__column">
+          <p class="header__address">
+            <i class="fa-sharp fa-solid fa-location-pin"></i>ul.Marcina Kromera
+            8/29, 10-130 Olsztyn
+          </p>
+          <p class="header__email">
+            <i class="fa-sharp fa-solid fa-envelope"></i
+            >furmanczykclinic@gmail.com
+          </p>
+        </div>
 
-      <div class="flex__column">
-        <p class="header__address">
-          <i class="fa-sharp fa-solid fa-location-pin"></i>ul.Marcina Kromera
-          8/29, 10-130 Olsztyn
-        </p>
-        <p class="header__email">
-          <i class="fa-sharp fa-solid fa-envelope"></i
-          >furmanczykclinic@gmail.com
-        </p>
-      </div>
-
-      <div class="d-flex">
-        <a href="#">Zostaw email </a>
-        <a href=""><i class="fab fa-facebook-f"></i></a>
-        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <div class="d-flex">
+          <a href="#form">Zostaw email </a>
+          <a href=""><i class="fab fa-facebook-f"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+        </div>
       </div>
     </header>
 
@@ -70,7 +65,7 @@
       />
     </div>
 
-    <div class="formularz"></div>
+    <div class="form" id="form"></div>
 
     <div class="img-text d-flex flex-column">
       <img
@@ -94,7 +89,7 @@
     <div class="offer">
       <h1 class="title">Sprawdź ofertę</h1>
       <div class="container">
-        <h2 class="subtitle">
+        <h2 class="subtitle d-flex flex-column">
           Nie przegap. <span>Już niedługo otwarcie!</span>
         </h2>
         <p>
@@ -104,9 +99,8 @@
         </p>
         <p>Sprawdź nasze usługi i zostaw swój email!</p>
       </div>
-
       <!-- Carousel -->
-      <div class="container mt-4">
+      <div class="container">
         <div class="splide bg-secondary">
           <div class="splide__slider">
             <div class="splide__track">
@@ -124,7 +118,10 @@
                   <p class="slide-p">Protetykaa</p>
                 </li>
                 <li class="splide__slide">
-                  <img src="./img/25A1E2463C1A1375-1.png" alt="diagnostykaa" />
+                  <img
+                    src="./img/furmanczyk-landing-page-v2a-1.png"
+                    alt="diagnostykaa"
+                  />
                   <p class="slide-p">Diagnostyka</p>
                 </li>
               </ul>
@@ -133,5 +130,11 @@
         </div>
       </div>
     </div>
-  </main>
+    <script
+      src="https://kit.fontawesome.com/4e17153010.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.5.0/dist/js/splide.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
 </html>
