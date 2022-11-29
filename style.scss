@@ -173,15 +173,17 @@ body {
     padding: 0;
   }
   .splide {
-    img {
-      width: 30vw;
-      height: auto;
-      box-shadow: 0px 8px 20px -10px var(--black);
-    }
     &__list {
       text-align: left;
+      img {
+        width: 30vw;
+        height: auto;
+        box-shadow: 0px 8px 20px -10px var(--black);
+      }
+      p {
+        color: var(--white);
+      }
     }
-
     &__arrow {
       svg {
         fill: var(--black);
@@ -471,7 +473,7 @@ body {
       margin-top: -14%;
     }
     .img-text {
-      padding-top: 10rem;
+      padding-top: 15rem;
     }
     .offer {
       .d-flex {

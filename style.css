@@ -208,15 +208,19 @@ body .box__slide {
   padding: 0;
 }
 
-body .splide img {
+body .splide__list {
+  text-align: left;
+}
+
+body .splide__list img {
   width: 30vw;
   height: auto;
   -webkit-box-shadow: 0px 8px 20px -10px var(--black);
           box-shadow: 0px 8px 20px -10px var(--black);
 }
 
-body .splide__list {
-  text-align: left;
+body .splide__list p {
+  color: var(--white);
 }
 
 body .splide__arrow svg {
@@ -481,7 +485,7 @@ body .text-line p {
     margin-top: -14%;
   }
   body .img-text {
-    padding-top: 10rem;
+    padding-top: 15rem;
   }
   body .offer .d-flex {
     width: 96%;
