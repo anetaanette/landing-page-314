@@ -27,6 +27,7 @@
   </head>
 
   <body>
+    <!-- Header -->
     <header class="header d-flex">
       <a href="https://www.google.com/" class="header__link">
         <img src="./img/25A1E2463C1A1375-1.png" alt="" class="header__img" />
@@ -41,7 +42,6 @@
           >furmanczykclinic@gmail.com
         </p>
       </div>
-
       <div class="d-flex header__btn">
         <a href="#form" class="btn btn-email">Zostaw email </a>
         <a href="https://www.facebook.com/" class="btn btn-fb"
@@ -52,7 +52,7 @@
         ></a>
       </div>
     </header>
-
+    <!-- Text & Image section -->
     <div class="text-img d-flex">
       <div class="text-img__flex d-flex flex-column">
         <h1 class="text__h1">Już wkrótce odmienimy Twoje życie</h1>
@@ -69,13 +69,11 @@
       />
     </div>
 
-    <div class="form d-flex flex-column">
+    <!-- Form section -->
+    <div class="form d-flex flex-column" id="form">
       <h2 class="title">Zostaw swój email</h2>
       <p>Powiadomimy Cię o otwarciu naszego gabinetu!</p>
       <form class="inputs d-flex">
-        <!-- <input required
-				data-error-required="First Name is required"
-				data-error-invalid="First Name is invalid">-->
         <input type="text" name="name" placeholder="Imię i nazwisko" required />
         <input type="email" name="email" placeholder="Email" required />
         <input type="text" name="phone" placeholder="Numer telefonu" required />
@@ -90,6 +88,7 @@
       <a href="#" class="btn">Powiadom mnie</a>
     </div>
 
+    <!-- Image & text section -->
     <div class="img-text d-flex">
       <img
         src="./img/furmanczyk-landing-page-v2a-1.png"
@@ -108,7 +107,7 @@
         </p>
       </div>
     </div>
-
+    <!-- Check the offer section -->
     <div class="offer">
       <h1 class="title">Sprawdź ofertę</h1>
       <div class="d-flex">
@@ -123,6 +122,7 @@
           </p>
           <p>Sprawdź nasze usługi i zostaw swój email!</p>
         </div>
+
         <!-- Carousel -->
         <div class="box box__slide">
           <div class="splide bg-secondary">
@@ -130,25 +130,25 @@
               <div class="splide__track">
                 <ul class="splide__list">
                   <li class="splide__slide">
-                    <a href="#">
+                    <a href="./html/licowki.html">
                       <img src="./img/licowki.png" alt="licówki" />
                       <p class="slide-p">Licówki</p>
                     </a>
                   </li>
                   <li class="splide__slide">
-                    <a href="#">
+                    <a href="./html/endodoncja.html">
                       <img src="./img/endodoncja.png" alt="endodoncja" />
                       <p class="slide-p">Endodoncja</p>
                     </a>
                   </li>
                   <li class="splide__slide">
-                    <a href="#">
+                    <a href="./html/protetyka.html">
                       <img src="./img/protetyka.png" alt="protetyka" />
                       <p class="slide-p">Protetyka</p>
                     </a>
                   </li>
                   <li class="splide__slide">
-                    <a href="#">
+                    <a href="./html/diagnostyka.html">
                       <img src="./img/endodoncja.png" alt="diagnostyka" />
                       <p class="slide-p">Diagnostyka</p>
                     </a>
