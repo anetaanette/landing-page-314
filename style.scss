@@ -68,7 +68,7 @@ body {
         font-size: 2rem;
       }
       &__p {
-        font-size: 1rem;
+        font-size: 1.2rem;
       }
     }
     &__flex {
@@ -153,6 +153,7 @@ body {
         }
         &__p {
           color: var(--color-dark);
+          font-size: 1.3rem;
         }
       }
     }
@@ -169,6 +170,9 @@ body {
     .subtitle {
       span {
         font-weight: 600;
+      }
+      p {
+        font-size: 1.3rem;
       }
     }
   }
@@ -244,13 +248,15 @@ body {
       .flex-column {
         margin-top: 2rem;
       }
-      .text {
-        &__h1 {
-          font-size: 3rem;
-        }
-        &__p {
-          font-size: 2rem;
-          padding: 2rem;
+      .d-flex {
+        .text {
+          &__h1 {
+            font-size: 3rem;
+          }
+          &__p {
+            font-size: 2rem;
+            padding: 2rem;
+          }
         }
       }
     }

@@ -79,7 +79,7 @@ body .text-img .text__h1 {
 }
 
 body .text-img .text__p {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 body .text-img__flex {
@@ -187,6 +187,7 @@ body .img-text .d-flex .text__h1, body .img-text .d-flex .text__p {
 
 body .img-text .d-flex .text__p {
   color: var(--color-dark);
+  font-size: 1.3rem;
 }
 
 body .offer {
@@ -205,6 +206,10 @@ body .offer .d-flex {
 
 body .offer .subtitle span {
   font-weight: 600;
+}
+
+body .offer .subtitle p {
+  font-size: 1.3rem;
 }
 
 body .box__slide {
@@ -282,10 +287,10 @@ body .text-line p {
   body .img-text .flex-column {
     margin-top: 2rem;
   }
-  body .img-text .text__h1 {
+  body .img-text .d-flex .text__h1 {
     font-size: 3rem;
   }
-  body .img-text .text__p {
+  body .img-text .d-flex .text__p {
     font-size: 2rem;
     padding: 2rem;
   }
