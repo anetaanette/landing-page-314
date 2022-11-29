@@ -68,7 +68,26 @@
       />
     </div>
 
-    <div class="form" id="form"></div>
+    <div class="form d-flex flex-column">
+      <h2 class="title">Zostaw swój email</h2>
+      <p>Powiadomimy Cię o otwarciu naszego gabinetu!</p>
+      <form class="inputs d-flex">
+        <!-- <input required
+				data-error-required="First Name is required"
+				data-error-invalid="First Name is invalid">-->
+        <input type="text" name="name" placeholder="Imię i nazwisko" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="text" name="phone" placeholder="Numer telefonu" required />
+      </form>
+      <div class="agreement d-flex">
+        <input type="checkbox" name="agree" />
+        <h3>
+          Wyrażam zgodę na przetwarzanie danych osobowych w celu przesyłania
+          treści na mój adres email podany powyżej w formularzu kontaktowym
+        </h3>
+      </div>
+      <a href="#" class="btn">Powiadom mnie</a>
+    </div>
 
     <div class="img-text d-flex">
       <img
