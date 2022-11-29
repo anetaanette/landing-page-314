@@ -197,6 +197,15 @@ body {
       background: var(--bg-offer);
     }
   }
+  .text-line {
+    align-items: center;
+    padding: 1.5rem 2rem;
+    p {
+      text-align: center;
+      font-size: 1.5rem;
+      color: var(--color-dark);
+    }
+  }
 }
 
 .fa-sharp {
@@ -248,6 +257,12 @@ body {
         font-size: 2rem;
       }
     }
+    .text-line {
+      justify-content: center;
+      p {
+        font-size: 2rem;
+      }
+    }
   }
 }
 
@@ -288,6 +303,11 @@ body {
       max-height: 32.9rem;
       .inputs {
         flex-direction: row;
+      }
+    }
+    .text-line {
+      p {
+        font-size: 3rem;
       }
     }
   }
@@ -415,6 +435,32 @@ body {
           }
         }
       }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    .text-img {
+      padding: 4rem 11rem 0;
+      &__flex {
+        padding: 4rem 1rem 1rem 10rem;
+      }
+    }
+    .form {
+      margin-top: -16.5%;
+    }
+  }
+}
+
+@media (min-width: 1920px) {
+  body {
+    .form {
+      scale: 1.5;
+      margin-top: -14%;
+    }
+    .img-text {
+      padding-top: 10rem;
     }
   }
 }

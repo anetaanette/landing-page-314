@@ -232,6 +232,19 @@ body .splide__track {
   background: var(--bg-offer);
 }
 
+body .text-line {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem 2rem;
+}
+
+body .text-line p {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--color-dark);
+}
+
 .fa-sharp {
   margin-right: 1rem;
 }
@@ -275,6 +288,14 @@ body .splide__track {
   body .offer p {
     font-size: 2rem;
   }
+  body .text-line {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .text-line p {
+    font-size: 2rem;
+  }
 }
 
 @media (min-width: 992px) {
@@ -313,6 +334,9 @@ body .splide__track {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  body .text-line p {
+    font-size: 3rem;
   }
 }
 
@@ -427,6 +451,28 @@ body .splide__track {
   body .offer .splide__arrow--next {
     right: -3rem;
     top: 13rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  body .text-img {
+    padding: 4rem 11rem 0;
+  }
+  body .text-img__flex {
+    padding: 4rem 1rem 1rem 10rem;
+  }
+  body .form {
+    margin-top: -16.5%;
+  }
+}
+
+@media (min-width: 1920px) {
+  body .form {
+    scale: 1.5;
+    margin-top: -14%;
+  }
+  body .img-text {
+    padding-top: 10rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
