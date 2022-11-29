@@ -402,7 +402,8 @@ body {
       }
       .d-flex {
         flex-direction: row;
-        .container {
+        justify-content: center;
+        .box-column {
           width: 30%;
           text-align: left;
           margin-top: 2rem;
@@ -450,6 +451,16 @@ body {
     .form {
       margin-top: -16.5%;
     }
+    .offer {
+      .d-flex {
+        width: 96%;
+        .box {
+          &__slide {
+            width: 59%;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -461,6 +472,23 @@ body {
     }
     .img-text {
       padding-top: 10rem;
+    }
+    .offer {
+      .d-flex {
+        width: 96%;
+        .box {
+          &__slide {
+            width: 59%;
+          }
+          .splide {
+            &__list {
+              img {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
