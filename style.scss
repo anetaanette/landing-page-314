@@ -119,7 +119,7 @@ body {
         position: relative;
         top: 0.8rem;
         height: 2rem;
-        scale: 2;
+        scale: 1.25;
       }
       h3 {
         margin: 0;
@@ -320,27 +320,18 @@ body {
 
 @media (min-width: 1200px) {
   body {
-    header {
-      .header {
-        &__link {
-          .header {
-            &__img {
-              width: 35rem;
-            }
-          }
-        }
+    .header {
+      &__img {
+        width: 35rem;
       }
     }
-    .text-img {
-      &__flex {
-        .text {
-          &__h1 {
-            font-size: 4rem;
-          }
-          &__p {
-            font-size: 2.5rem;
-          }
-        }
+
+    .text {
+      &__h1 {
+        font-size: 4rem;
+      }
+      &__p {
+        font-size: 2.5rem;
       }
     }
 
